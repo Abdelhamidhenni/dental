@@ -11,7 +11,7 @@ keystone.init({
 	'brand': 'SweetTooth',
 
 	'less': 'public',
-	'static': 'public',
+	'static': ['public','demo_sites', 'demo_site2'],
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'hbs',
@@ -53,6 +53,10 @@ keystone.set('email locals', {
 		},
 	},
 });
+//add static route to the demo sites
+// keystone.set('static','demo_site1');
+// keystone.redirect('/demo1','/demo_site1/index.html')
+
 keystone.set('email tests', require('./routes/emails'));
 
 keystone.Email.defaults.templateExt = 'hbs';
