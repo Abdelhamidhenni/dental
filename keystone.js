@@ -5,6 +5,7 @@ require('dotenv').config();
 // Require keystone
 var keystone = require('keystone');
 var handlebars = require('express-handlebars');
+var nodemailer = require('nodemailer');
 
 keystone.init({
 	'name': 'SweetTooth',

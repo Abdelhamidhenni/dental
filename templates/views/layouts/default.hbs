@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
@@ -109,7 +111,30 @@
   
   
   <div id= "body">
-    
+    {{#if messages}}
+      <div id="flash-messages" class="container">
+        {{#if messages.info}}
+        <div class="alert alert-info">
+            {{{flashMessages messages.info}}}
+        </div>
+        {{/if}}
+        {{#if messages.success}}
+        <div class="alert alert-success">
+            {{{flashMessages messages.success}}}
+        </div>
+        {{/if}}
+        {{#if messages.warning}}
+        <div class="alert alert-warning">
+            {{{flashMessages messages.warning}}}
+        </div>
+        {{/if}}
+        {{#if messages.error}}
+        <div class="alert alert-danger">
+            {{{flashMessages messages.error}}}
+        </div>
+        {{/if}}
+      </div>
+      {{/if}}
       <!-- The content block should contain the body of your template's content-->
     {{{body}}}
   

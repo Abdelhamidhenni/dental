@@ -10,7 +10,7 @@ exports.initLocals = function (req, res, next) {
 		{ label: 'Services', key: 'services', href:'/services'},
 		// { label: 'Portfolio', key: 'Portfolio', href:'/portfolio'},
 		{ label: 'Demos', key: 'demos', href:'/demos'},
-		{ label: 'Blog', key: 'blog', href: '/blog' },
+		// { label: 'Blog', key: 'blog', href: '/blog' },
 
 		{ label: 'Contact', key: 'contact', href: '/contact' },
 	];
