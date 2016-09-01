@@ -1,7 +1,7 @@
 var keystone = require('keystone');
 var middleware = require('./middleware');
 var importRoutes = keystone.importer(__dirname);
-var nodemailer = require('nodemailer');
+// var nodemailer = require('nodemailer');
 
 
 // Common Middleware
