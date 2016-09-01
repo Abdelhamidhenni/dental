@@ -1,6 +1,7 @@
 var keystone = require('keystone');
 var Enquiry = keystone.list('Enquiry');
-var nodemailer = require('nodemailer');
+var nodemailer = require('Nodemailer');
+
 
 exports = module.exports = function (req, res) {
 
